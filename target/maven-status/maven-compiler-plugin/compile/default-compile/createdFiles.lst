@@ -1,0 +1,9 @@
+controller\LoginController.class
+controller\UsuarioController.class
+model\Producto.class
+controller\ProductosController.class
+dao\UsuarioDAO.class
+dao\ProductoDAO.class
+model\Usuario.class
+controller\LogoutController.class
+conexion\Database.class
