@@ -1,3 +1,4 @@
+filters\AuthFilter.class
 controller\LoginController.class
 controller\UsuarioController.class
 model\Producto.class

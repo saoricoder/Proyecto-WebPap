@@ -16,7 +16,7 @@ public class Database {
     private final String connectionString = "jdbc:mysql://localhost:3306/%s";
     
     private Database() throws SQLException, Exception {
-        Class.forName("com.mysql.jdbc.Driver");  
+        Class.forName("com.mysql.cj.jdbc.Driver");  
         connection = DriverManager.getConnection(
                 String.format(connectionString, DATABASE_NAME),
                 DATABASE_USER,

@@ -17,7 +17,7 @@ import java.sql.SQLException;
 public class UsuarioDAO {
     
     public Usuario autenticar(String nombre, String contraseña) {
-        String sql = "SELECT * FROM usuarios WHERE nombre=? AND contraseña=?";
+        String sql = "SELECT * FROM usuarios WHERE nombre=? AND contrasena=?";
         try (Connection conn = Database.getInstance().getConnection();
              PreparedStatement ps = conn.prepareStatement(sql)) {
             ps.setString(1, nombre);
@@ -27,7 +27,7 @@ public class UsuarioDAO {
                     Usuario usuario = new Usuario();
                     usuario.setId(rs.getInt("id"));
                     usuario.setNombre(rs.getString("nombre"));
-                    usuario.setContrasena(rs.getString("contraseña"));
+                    usuario.setContrasena(rs.getString("contrasena"));
                     return usuario;
                 }
             }
@@ -47,7 +47,7 @@ public class UsuarioDAO {
                     Usuario usuario = new Usuario();
                     usuario.setId(rs.getInt("id"));
                     usuario.setNombre(rs.getString("nombre"));
-                    usuario.setContrasena(rs.getString("contraseña"));
+                    usuario.setContrasena(rs.getString("contrasena"));
                     return usuario;
                 }
             }

@@ -33,10 +33,10 @@ public class LoginController extends HttpServlet {
         if (usuario != null) {
             HttpSession session = request.getSession();
             session.setAttribute("user", usuario);
-            response.sendRedirect("pages/dashboard.jsp"); // ✅ CORREGIDO: Elimina "webapp/"
+            response.sendRedirect(request.getContextPath()+"/pages/dashboard.jsp"); // ✅ CORREGIDO: Elimina "webapp/"
         } else {
             request.setAttribute("error", "Usuario o contraseña incorrectos");
-            request.getRequestDispatcher("/WEB-INF/pages/login.jsp").forward(request, response); // ✅ Corrección en la redirección
+            request.getRequestDispatcher("/pages/login.jsp").forward(request, response); // ✅ Corrección en la redirección
         }
     }
 }
