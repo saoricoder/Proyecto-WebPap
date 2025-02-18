@@ -1,0 +1,7 @@
+crudpapeleria\dao\UserDao.class
+crudpapeleria\controller\ProductsController$HttpMethod.class
+crudpapeleria\controller\ProductsController.class
+crudpapeleria\core\Database.class
+crudpapeleria\model\User.class
+crudpapeleria\model\Product.class
+crudpapeleria\dao\ProductDao.class
