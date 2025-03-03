@@ -6,25 +6,28 @@ public class Product {
     private String description; // descripcion_producto en la base de datos
     private double price; // precio_producto en la base de datos
     private int quantity; // cantidad_producto en la base de datos
+    private Category category; // Relación con la categoría
 
     // Constructor vacío
     public Product() {}
 
     // Constructor con todos los atributos
-    public Product(int id, String name, String description, double price, int quantity) {
+    public Product(int id, String name, String description, double price, int quantity, Category category) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.price = price;
         this.quantity = quantity;
+        this.category = category;
     }
 
     // Constructor sin el ID (útil para crear nuevos productos)
-    public Product(String name, String description, double price, int quantity) {
+    public Product(String name, String description, double price, int quantity, Category category) {
         this.name = name;
         this.description = description;
         this.price = price;
         this.quantity = quantity;
+        this.category = category;
     }
 
     // Getters y Setters
@@ -68,6 +71,15 @@ public class Product {
         this.quantity = quantity;
     }
 
+    // Getter y Setter para la categoría
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
+
     // Método toString para representar el objeto como una cadena
     @Override
     public String toString() {
@@ -77,6 +89,7 @@ public class Product {
                 ", description='" + description + '\'' +
                 ", price=" + price +
                 ", quantity=" + quantity +
+                ", category=" + category.getName() + // Mostramos el nombre de la categoría
                 '}';
     }
 }

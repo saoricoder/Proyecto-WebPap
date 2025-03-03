@@ -44,10 +44,13 @@ public class UserDao {
     public boolean register(User user) {
         try {
             PreparedStatement statement = db.getConnection()
-                    .prepareStatement("INSERT INTO usuarios (usuario, contrasena) VALUES (?, ?)");
+                    .prepareStatement("INSERT INTO usuarios (usuario, nombre, contrasena) VALUES (?, ?)");
             statement.setString(1, user.getUsername());
-            statement.setString(2, user.getPassword());
-            return statement.executeUpdate() > 0;
+            statement.setString(2, user.getName());
+            statement.setString(3, user.getPassword());
+            
+            int rowsAffected = statement.executeUpdate();
+            return rowsAffected > 0;
         } catch (SQLException ex) {
             ex.printStackTrace(System.out);
             return false;

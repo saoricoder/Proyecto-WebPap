@@ -1,4 +1,3 @@
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
@@ -30,9 +29,18 @@
                 <label for="description">Descripción</label>
                 <textarea id="description" class="form-control" name="description" required>${product.description}</textarea>
             </div>
+            <div class="mb-5">
+                <label for="category">Categoría</label>
+                <select id="category" name="category" class="form-control" required>
+                    <c:forEach var="category" items="${categories}">
+                        <option value="${category.id}" ${category.id == product.category.id ? 'selected' : ''}>${category.name}</option>
+                    </c:forEach>
+                </select>
+            </div>
             <div class="d-flex justify-content-end">
                 <input type="hidden" name="id" value="${product.id}" />
                 <button type="submit" class="btn btn-primary">Guardar</button>
+                <a href="Products?" class="btn btn-secondary ms-3">Cancelar</a>
             </div>
         </form>
     </div>

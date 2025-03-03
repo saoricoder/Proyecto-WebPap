@@ -11,19 +11,22 @@ package crudpapeleria.model;
 public class User {
     private int id;
     private String username;
+    private String name;
     private String password;
 
     // Constructores
     public User() {}
 
-    public User(int id, String username, String password) {
+    public User(int id, String username, String name, String password) {
         this.id = id;
         this.username = username;
+        this.name = name;
         this.password = password;
     }
 
-    public User(String username, String password) {
+    public User(String username, String name, String password) {
         this.username = username;
+        this.name = name;
         this.password = password;
     }
 
@@ -42,6 +45,14 @@ public class User {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+    
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getPassword() {

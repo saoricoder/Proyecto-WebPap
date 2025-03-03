@@ -5,7 +5,7 @@
     <artifactId>CrudPapeleria</artifactId>
     <version>1.0</version>
     <packaging>war</packaging>
-    <name>CrudPapeleria-1.0</name>
+    <name>CrudPapeleria-1.0/imagenes</name>
     
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>

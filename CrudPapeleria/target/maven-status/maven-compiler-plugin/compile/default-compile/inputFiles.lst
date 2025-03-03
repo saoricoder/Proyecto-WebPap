@@ -1,6 +1,10 @@
-C:\Users\User\Documents\WEB\CrudProductos - copia\CrudPapeleria\src\main\java\crudpapeleria\dao\ProductDao.java
-C:\Users\User\Documents\WEB\CrudProductos - copia\CrudPapeleria\src\main\java\crudpapeleria\controller\ProductsController.java
-C:\Users\User\Documents\WEB\CrudProductos - copia\CrudPapeleria\src\main\java\crudpapeleria\model\Product.java
-C:\Users\User\Documents\WEB\CrudProductos - copia\CrudPapeleria\src\main\java\crudpapeleria\core\Database.java
-C:\Users\User\Documents\WEB\CrudProductos - copia\CrudPapeleria\src\main\java\crudpapeleria\model\User.java
-C:\Users\User\Documents\WEB\CrudProductos - copia\CrudPapeleria\src\main\java\crudpapeleria\dao\UserDao.java
+C:\Users\User\Documents\WEB\PAPELERIA 2\PAPELERIA 2\CrudPapeleria\src\main\java\crudpapeleria\model\Category.java
+C:\Users\User\Documents\WEB\PAPELERIA 2\PAPELERIA 2\CrudPapeleria\src\main\java\crudpapeleria\core\Database.java
+C:\Users\User\Documents\WEB\PAPELERIA 2\PAPELERIA 2\CrudPapeleria\src\main\java\crudpapeleria\dao\ProductDao.java
+C:\Users\User\Documents\WEB\PAPELERIA 2\PAPELERIA 2\CrudPapeleria\src\main\java\crudpapeleria\dao\UserDao.java
+C:\Users\User\Documents\WEB\PAPELERIA 2\PAPELERIA 2\CrudPapeleria\src\main\java\crudpapeleria\dao\ClienteDao.java
+C:\Users\User\Documents\WEB\PAPELERIA 2\PAPELERIA 2\CrudPapeleria\src\main\java\crudpapeleria\model\Cliente.java
+C:\Users\User\Documents\WEB\PAPELERIA 2\PAPELERIA 2\CrudPapeleria\src\main\java\crudpapeleria\model\User.java
+C:\Users\User\Documents\WEB\PAPELERIA 2\PAPELERIA 2\CrudPapeleria\src\main\java\crudpapeleria\controller\ProductsController.java
+C:\Users\User\Documents\WEB\PAPELERIA 2\PAPELERIA 2\CrudPapeleria\src\main\java\crudpapeleria\model\Product.java
+C:\Users\User\Documents\WEB\PAPELERIA 2\PAPELERIA 2\CrudPapeleria\src\main\java\crudpapeleria\dao\CategoryDao.java
