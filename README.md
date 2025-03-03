@@ -58,6 +58,7 @@ git clone [https://github.com/saoricoder/Proyecto-WebPap.git]
 
 # Estructura del Proyecto CrudPapeleria
 
+```plaintext
 CrudPapeleria/
 ├── src/
 │   └── main/
